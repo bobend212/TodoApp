@@ -15,8 +15,11 @@ export class TodoService {
    addTodo(title: string){
      this.firestoreCollection.add({
        title,
-       isDone : false,
-       isEditing: false
+       isDone: false,
+       isEditing: false,
+       dateCreated: Date.now(),
+       dateEdited: null,
+       dateFinished: null
      })
    }
 

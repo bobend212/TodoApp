@@ -1,5 +1,4 @@
-import { isNgTemplate } from '@angular/compiler';
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { TodoService } from '../services/todo.service';
 import {MatSnackBar} from '@angular/material/snack-bar';
 
@@ -13,6 +12,8 @@ export class TodoComponent implements OnInit {
   todos: any[] = [];
   updateMode : boolean = false;
   newTitle: string = "";
+  
+  @Output() hideComponentChange = new EventEmitter<boolean>();
 
   constructor(private todoService: TodoService,private _snackBar: MatSnackBar) { }
 
@@ -23,6 +24,10 @@ export class TodoComponent implements OnInit {
         {return a.isDone - b.isDone } );
       })
   }
+
+  sendToParent(){
+    this.hideComponentChange.emit(true);
+    }
 
   onClick(titleInput: HTMLInputElement) {
     if (titleInput.value) {

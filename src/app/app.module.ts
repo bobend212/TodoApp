@@ -11,12 +11,13 @@ import {AngularFirestoreModule} from '@angular/fire/compat/firestore'
 import { FormsModule } from '@angular/forms';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { TodoDetailsComponent } from './todo-details/todo-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodoComponent
+    TodoComponent,
+    TodoDetailsComponent
   ],
   imports: [
     BrowserModule,

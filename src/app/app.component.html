@@ -3,5 +3,8 @@
     <div class="col-md-5">
       <app-todo></app-todo>
     </div>
+    <div class="col-md-5">
+      <app-todo-details (hideComponentChange)="valFromChild = !valFromChild"></app-todo-details> 
+    </div>
   </div>
 </div>

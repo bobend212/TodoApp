@@ -1,11 +1,11 @@
 <div class="card shadow-lg mt-5">
-    <div class="card-header text-center py-4 border-0">
-        <h1 class="display-6 fw-bold">Todo App <i class="fa-solid fa-list-check text-success"></i></h1>
-        <button (click)="sendToParent()">Test</button>
+    <div class="card-header text-center py-4 border-0 bg-warning">
+        <h1 class="fw-bold">Task details <i class="fa-solid fa-circle-info"></i></h1>
+        
     </div>
     <div class="card-body p-4">
 
-        <ul class="list-group">
+        <!-- <ul class="list-group">
             <li class="list-group-item mb-2 border py-0 rounded-3">
                 <div class="input-group">
                     <input type="text" class="form-control border-0 py-2 shadow-none" placeholder="New Task"
@@ -21,15 +21,12 @@
                         [ngClass]="item.isDone?'fa-solid fa-circle-check':'fa-regular fa-circle'">
                     </i>
                     <span [ngClass]="item.isDone?'text-decoration-line-through':''"> {{item.title}}</span>
-                    
+
                     <span style="margin-left: 20px;" class="float-end text-secondary" (click)="onDelete(item.id)">
                         <i style="color: red;" class="fa-solid fa-trash"></i>
                     </span>
-                    <span  style="margin-left: 20px;" class="float-end text-secondary" (click)="onEditMode(i)">
+                    <span class="float-end text-secondary" (click)="onEditMode(i)">
                         <i class="fa-solid fa-pen-to-square"></i>
-                    </span>
-                    <span class="float-end text-info" (click)="onEditMode(i)">
-                        <i class="fa-solid fa-circle-info"></i>
                     </span>
                     <div *ngIf="item.isEditing">
                         <div class="example-full-width">
@@ -46,6 +43,6 @@
 
                 </span>
             </li>
-        </ul>
+        </ul> -->
     </div>
 </div>
