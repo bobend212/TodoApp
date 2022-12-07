@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "todoapp-507ff": {
+      "hosting": {
+        "TodoApp": [
+          "todoapp-507ff"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "todoapp-507ff"
+  }
+}
