@@ -1,3 +1,8 @@
 i:hover {
     cursor: pointer;
 }
+
+input::placeholder {
+    font-size: small;
+    font-style: italic;
+}
