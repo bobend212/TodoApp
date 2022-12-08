@@ -1,27 +1,39 @@
-# TodoApp
+## Todo App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.7.
+Todo list application using Angular and Firebase database.
 
-## Development server
+- Angular 14, Firebase
+- CRUD tasks
+- Details component
+- Show/hide completed tasks
+- Material snackbar added
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Snapshots
 
-## Code scaffolding
+> **Main view - empty list**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+ <img src="src/assets/main_empty.png" width="400">
 
-## Build
+> **Main view - list with tasks**
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+ <img src="src/assets/main_todos.png" width="400">
 
-## Running unit tests
+> **Main view - completed tasks are hidden**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ <img src="src/assets/hideCompleted.png" width="400">
 
-## Running end-to-end tests
+> **Main and Details view - completed task**
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+ <img src="src/assets/details_completedTask.png" width="1000">
 
-## Further help
+> **Main and Details view - not completed task**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+ <img src="src/assets/details_notCompletedTask.png" width="1000">
+
+> **Main view - update task title (before)**
+
+ <img src="src/assets/updateTask_before.png" width="400">
+
+> **Main view - update task title (after)**
+
+ <img src="src/assets/updateTask_after.png" width="400">
