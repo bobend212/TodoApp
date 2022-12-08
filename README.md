@@ -1,4 +1,4 @@
-## Todo App
+# Todo App
 
 Todo list application using Angular and Firebase database.
 
@@ -8,32 +8,32 @@ Todo list application using Angular and Firebase database.
 - Show/hide completed tasks
 - Material snackbar added
 
-## Snapshots
+# Snapshots
 
 > **Main view - empty list**
 
- <img src="src/assets/main_empty.png" width="400">
+![main_empty](https://user-images.githubusercontent.com/35953089/206466941-cd5390a6-20b0-4413-a550-d50dd49b1c0c.PNG)
 
 > **Main view - list with tasks**
 
- <img src="src/assets/main_todos.png" width="400">
+![main_todos](https://user-images.githubusercontent.com/35953089/206467177-405865e6-fbb5-4442-8431-238f6f0c53b3.PNG)
 
 > **Main view - completed tasks are hidden**
 
- <img src="src/assets/hideCompleted.png" width="400">
+![hideCompleted](https://user-images.githubusercontent.com/35953089/206467208-440cb3d4-f454-4c5f-8af7-0573fa878584.PNG)
 
 > **Main and Details view - completed task**
 
- <img src="src/assets/details_completedTask.png" width="1000">
+![details_completedTask](https://user-images.githubusercontent.com/35953089/206467250-e7416468-3aee-4794-875b-5561564f87f4.PNG)
 
 > **Main and Details view - not completed task**
 
- <img src="src/assets/details_notCompletedTask.png" width="1000">
+![details_notCompletedTask](https://user-images.githubusercontent.com/35953089/206467271-d526ea5d-692a-4f21-9dd5-26fd51327611.PNG)
 
 > **Main view - update task title (before)**
 
- <img src="src/assets/updateTask_before.png" width="400">
+![updateTask_before](https://user-images.githubusercontent.com/35953089/206467444-b2b1d7cf-343c-42ea-aa41-242aa314a7d3.PNG)
 
 > **Main view - update task title (after)**
 
- <img src="src/assets/updateTask_after.png" width="400">
+![updateTask_after](https://user-images.githubusercontent.com/35953089/206467477-3f168546-4f5b-4cc4-8193-a6a3307726b1.PNG)
