@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Todo } from '../models/todo';
 
 @Component({
   selector: 'app-todo-details',
@@ -7,11 +8,16 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class TodoDetailsComponent implements OnInit {
 
-  @Input() testVal!: string;
+  @Input() todo!: Todo;
+  @Output() hideDetails = new EventEmitter<boolean>();
   
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onHide() {
+    this.hideDetails.emit(false);
   }
 
 }

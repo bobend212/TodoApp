@@ -10,8 +10,8 @@
                 <li class="list-group-item mb-2 border py-0 rounded-3">
                     <div class="input-group">
                         <input type="text" class="form-control border-0 py-2 shadow-none" placeholder="New Task"
-                            (keyup.enter)="onClick(titleInput)" #titleInput>
-                        <button class="btn text-success border-0" (click)="onClick(titleInput)">
+                            (keyup.enter)="onCreate(titleInput)" #titleInput>
+                        <button class="btn text-success border-0" (click)="onCreate(titleInput)">
                             <i class="fa-solid fa-circle-plus fa-xl"></i>
                         </button>
                     </div>
@@ -29,7 +29,7 @@
                         <span style="margin-left: 20px;" class="float-end text-secondary" (click)="onEditMode(i)">
                             <i class="fa-solid fa-pen-to-square"></i>
                         </span>
-                        <span class="float-end text-info" (click)="sendToParent(item.title)">
+                        <span class="float-end text-info" (click)="openTaskDetails(item)">
                             <i class="fa-solid fa-circle-info"></i>
                         </span>
                         <div *ngIf="item.isEditing">
@@ -56,6 +56,6 @@
 
 
 <div class="col-md-5" *ngIf="hideComponent">
-    <app-todo-details [testVal]="sendTitle"></app-todo-details>
+    <app-todo-details [todo]="todoModel" (hideDetails)="hideComponent=$event"></app-todo-details>
 </div>
 </div>
