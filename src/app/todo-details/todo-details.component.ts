@@ -7,6 +7,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class TodoDetailsComponent implements OnInit {
 
+  @Input() testVal!: string;
   
   constructor() { }
 

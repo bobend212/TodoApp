@@ -7,10 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'TodoApp';
-  valFromChild = false;
-
-  childToParent($event: boolean){
-    this.valFromChild = $event;
-    console.log($event);
-    }
 }

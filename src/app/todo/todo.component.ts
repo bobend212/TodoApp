@@ -13,7 +13,9 @@ export class TodoComponent implements OnInit {
   updateMode : boolean = false;
   newTitle: string = "";
   
-  @Output() hideComponentChange = new EventEmitter<boolean>();
+  @Input() hideComponent: boolean = false;
+  @Input() sendTitle!: string;
+
 
   constructor(private todoService: TodoService,private _snackBar: MatSnackBar) { }
 
@@ -25,8 +27,9 @@ export class TodoComponent implements OnInit {
       })
   }
 
-  sendToParent(){
-    this.hideComponentChange.emit(true);
+  sendToParent(title: string){
+    this.hideComponent = !this.hideComponent;
+    this.sendTitle = title;
     }
 
   onClick(titleInput: HTMLInputElement) {

@@ -4,45 +4,6 @@
         
     </div>
     <div class="card-body p-4">
-
-        <!-- <ul class="list-group">
-            <li class="list-group-item mb-2 border py-0 rounded-3">
-                <div class="input-group">
-                    <input type="text" class="form-control border-0 py-2 shadow-none" placeholder="New Task"
-                        (keyup.enter)="onClick(titleInput)" #titleInput>
-                    <button class="btn text-success border-0" (click)="onClick(titleInput)">
-                        <i class="fa-solid fa-circle-plus fa-xl"></i>
-                    </button>
-                </div>
-            </li>
-            <li class="list-group-item mb-2 border py-2 rounded-3" *ngFor="let item of todos; let i = index">
-                <span>
-                    <i class="text-success" (click)="onStatusChange(item.id,!item.isDone)"
-                        [ngClass]="item.isDone?'fa-solid fa-circle-check':'fa-regular fa-circle'">
-                    </i>
-                    <span [ngClass]="item.isDone?'text-decoration-line-through':''"> {{item.title}}</span>
-
-                    <span style="margin-left: 20px;" class="float-end text-secondary" (click)="onDelete(item.id)">
-                        <i style="color: red;" class="fa-solid fa-trash"></i>
-                    </span>
-                    <span class="float-end text-secondary" (click)="onEditMode(i)">
-                        <i class="fa-solid fa-pen-to-square"></i>
-                    </span>
-                    <div *ngIf="item.isEditing">
-                        <div class="example-full-width">
-                            <input type="text" class="form-control border-1 py-2 shadow-none" placeholder="update title"
-                                [(ngModel)]="newTitle" (keyup.enter)="onUpdate(item.id, newTitle)">
-                        </div>
-                        <span class="float-end text-secondary" (click)="onUpdate(item.id, newTitle)">
-                            <i style="color: green;" class="fa-solid fa-square-check"></i>
-                        </span>
-                        <span style="margin-right: 20px;" class="float-end text-secondary" (click)="cancelEditMode(i)">
-                            <i class="fa-solid fa-square-xmark"></i>
-                        </span>
-                    </div>
-
-                </span>
-            </li>
-        </ul> -->
+        <p>value: {{testVal}}</p>
     </div>
 </div>
