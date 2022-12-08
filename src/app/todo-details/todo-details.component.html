@@ -6,8 +6,8 @@
     <div class="card-body p-4">
         <p>Title: {{todo.title}}</p>
         <p>Date Created: {{todo.dateCreated | date: 'EEEE, d MMMM, y [h:mm:ss]' }}</p>
-        <p *ngIf="todo.dateFinished != 0">Date Finished: {{todo.dateFinished | date: 'EEEE, d MMMM, y [h:mm:ss]' }}</p>
-        <p *ngIf="todo.dateEdited != 0">Date Edited: {{todo.dateEdited | date: 'EEEE, d MMMM, y [h:mm:ss]' }}</p>
+        <p *ngIf="todo.dateFinished != 0">Date Finished: {{todo.dateFinished | date: 'EEEE, d MMMM, y [H:mm:ss]' }}</p>
+        <p *ngIf="todo.dateEdited != 0">Date Edited: {{todo.dateEdited | date: 'EEEE, d MMMM, y [H:mm:ss]' }}</p>
         <p *ngIf="todo.isDone != false">Status: <span [ngClass]="todo.isDone?'fa-solid fa-circle-check text-success':'fa-regular fa-circle'"></span></p>
     </div>
     <button class="btn btn-warning btn-sm " (click)="onHide()">close</button>
